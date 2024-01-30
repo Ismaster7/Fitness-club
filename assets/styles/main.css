@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'PT Sans', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    color: #ebe3e3;
+}
+
+:root{
+    --primary-color: radial-gradient(rgb(20,20,20), 0%, rgba(10, 10, 10, .9), 75%, rgba(0, 0,0,1)100%);
+    --secondy-color: #ebe3e3;
+    --red: rgb(215, 25, 20);
+}
+
+.container{
+width: 100vw;
+height: 100vh;
+background: radial-gradient(rgb(20,20,20), 0%, rgba(10, 10, 10, .9), 75%, rgba(0, 0,0,1)100%);
+box-shadow: 2px 2px 100px 100px rgb(0,0,0);
+}
+fieldset{
+    border: none;
+    margin-top: 1rem;
+}
+
+form input{
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+form input:focus{
+border: 3px solid var(--primary-color);
+}
+
+form input[type="submit"]{
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: 0.35s all;
+    text-transform: uppercase;
+    padding: .4rem;
+}
+
+
+form input[type="submit"]:hover{
+    background-color: var(--primary-color);
+    cursor: pointer;
+    color: #fff;
+    transform: scale(1.08);
+    
+
+}
+
+.start-page{
+    
+    max-width: 90rem;
+    margin: 0 auto;
+    color: var(--secondy-color);
+    padding: 1rem;
+}
+
+#lista{
+    display: flex;
+    font-size: 1.3rem;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 1.5rem;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1rem;
+}
+
+.letsdo{
+    position: absolute;
+    font-size: 13rem;
+    z-index: 1;
+    left: 7rem;
+    text-shadow: 2px 2px 5px black;
+}
+.lista-item:hover{
+    transform: scale(1.2);
+    transition: all 0.25s;
+    text-shadow: 4px 4px 1rem  #fff;
+}
+
+.divisor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem;
+
+}
+
+.title{
+    padding: .2rem 3rem;
+    background-color: var(--red) ;
+    transform: rotate(20deg);
+    font-size: 2rem;
+    font-family: 'Rubik Burned', system-ui;
+}
+.best-part{
+    font-size: 4rem;
+    text-wrap: wrap;
+    max-width: 36rem;
+    text-align: right;
+    text-shadow: 1px 1px 8px black;
+}
+.transparente{
+    font-size: 2.2rem;
+    border-bottom: 2px solid var(--red);
+    box-shadow: 2px 3px 4px .5px #fff;
+    padding: .5rem;
+}
+
+#mulher-forte{
+    position: absolute;
+    height: 35vw;
+    left: 5rem;
+    z-index: 2;
+    bottom: 0px;
+    height: 80vh;
+    filter: drop-shadow(1px 1px 100px black);
+    
+
+}
+
+.botao{
+    background-color: var(--red);
+    color: var(--secondy-color);
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 8px black;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.botao:hover{
+    transform: scale(1.1);
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+#gym{
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* .apresentation{
+    width: 50vw;
+    height: 100vh;
+     border-radius: 0 100rem 0 0;
+    
+    background-color: var(--red);
+    align-self: flex-end;
+    justify-self: flex-end;
+
+} */
+
+.start-page > h2{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    
+}
