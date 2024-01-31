@@ -26,13 +26,13 @@
                 <nav>
                     <ul id="lista">
                         <li class="lista-item"><a href="#home-page">Home</a></li>
-                        <li class="lista-item"><a href="imc-calculator">IMC Calculator</a></li>
+                        <li class="lista-item"><a href="#imc-calculator">IMC Calculator</a></li>
                         <li class="lista-item"><a href="#gym">Gym</a></li>
                         <li class="lista-item"><a href="#contact-us">Contact us</a></li>
                     </ul>
                 </nav>
             </header>
-            
+
             <img src="./assets/img/pngwing.com.png" alt="mulher treinando" id="mulher-forte">
             <p class="letsdo">Start </br> now</p>
             <div class="divisor">
@@ -44,14 +44,58 @@
         </div>
     </section>
     <section class="container" id="imc-calculator">
-        <div class="start-page">
+        <div class="start-page" id="imc-page">
             <h2>First, let's find out your iMC:</h2>
-            <div class="tabela-imc"></div>
-            <div class="my-informations">
-                <label>Altura: <input type="number" min="1" max="220"></label></div>
-                <label>Peso: <input type="number" min="20" max="400"></label></div>
-        </div>
+            <div class="organizacao">
+            <div class="tabela-imc">
 
+                <table>
+                    <thead>
+                        <h3>Tabela IMC</h3>
+                        <th>
+                            <tr>
+                            <td>IMC</td>
+                            <td>Resultado</td>
+                        </tr>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Menos que 18,5</td>
+                            <td>Abaixo do Peso</td>
+                        </tr>
+                        <tr>
+                            <td>Entre 18,5 e 24,9</td>
+                            <td> Peso Normal</td>
+                        </tr>
+                        <tr>
+                            <td>Entre 25 e 29,9</td>
+                            <td> Sobrepeso </td>
+                        </tr>
+                        <tr>
+                            <td>Entre 30 e 34,9</td>
+                            <td> Obesidade grau 1</td>
+                        </tr>
+                        <tr>
+                            <td>Entre 35 e 39,9</td>
+                            <td> Obesidade grau 2 </td>
+                        </tr>
+                        <tr>
+                            <td>Mais do que 40</td>
+                            <td> Obesidade grau 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="my-informations">
+                <label>Altura: <input type="number" min="1" max="220" id="altura"></label>
+                <label>Peso: <input type="number" min="20" max="400" id="peso"></label>
+                <button class="botao" id="btCalcular">Calcular</button>
+            </div>
+
+        </div>
+        </div>
+    </div>
     </section>
     <section id="gym" class="container">
 
