@@ -6,17 +6,33 @@ const bloco = document.querySelector("#imc-page");
 
 function main() {
 
-    botao.addEventListener(('click'), botaoClicado)
-
+    botao.addEventListener(('click'), botaoClicado);
+    campoAltura.addEventListener(('change'),()=>{
+        if(campoAltura.value > 2.20 || campoAltura.value < 1.00){
+            alert("Altura inválida. Favor digitar no formato '0,00'")
+            campoAltura.value = "";
+        }
+    })
+    campoPeso.addEventListener(('change'),()=>{
+        if(campoPeso.value > 550 || campoPeso.value < 1){
+            alert("Peso inválido.")
+            campoPeso.value = "";
+        }
+    })
 }
 
 function botaoClicado() {
-    const resultado = calcularImc(campoAltura.value, campoPeso.value);
-    exibirTela(resultado);
-}
+    if(isNaN(campoAltura.value) && isNan(campoPeso.value)){
+        alert('Valor inválido inserido')
+    }else{
+
+        const resultado = calcularImc(campoAltura.value, campoPeso.value);
+        exibirTela(resultado);
+    }
+    }
 
 function calcularImc(altura, peso) {
-    const numeroImc = Math.round((peso/(altura*altura)*10000))
+    const numeroImc = Math.round((peso/(altura*altura)))
     console.log(numeroImc)
     return consultarImc(numeroImc);
 }
